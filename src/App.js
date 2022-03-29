@@ -17,9 +17,6 @@ function App() {
         <Route exact path='/'>
           <Homepage></Homepage>
         </Route>
-        <Route exact path='/exchanges'>
-          <Exchanges></Exchanges>
-        </Route>
         <Route exact path='/cryptos'>
           <Crypto></Crypto>
         </Route>

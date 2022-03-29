@@ -3,6 +3,7 @@ import { Typography, Row, Col, Statistic } from 'antd';
 import { useGetCryptosQuery } from '../../services/cryptoApi';
 import millify from 'millify';
 import { Crypto, News } from '..';
+import Spinner from '../Spinner';
 import { Link } from 'react-router-dom';
 const { Title } = Typography;
 
@@ -10,8 +11,9 @@ const Home = () => {
   const { data, isFetching } = useGetCryptosQuery(10);
   const globalStats = data?.data?.stats;
   if (isFetching) {
-    return 'Loading...';
+    return <Spinner></Spinner>;
   }
+
   return (
     <div>
       <Row className='home-summary'>
@@ -52,7 +54,7 @@ const Home = () => {
           Top 10 coins
         </Title>
         <Title level={4} className='show-more'>
-          <Link to='/cryptos'>Show More</Link>
+          <Link to='/cryptos'>View All</Link>
         </Title>
       </div>
       <Crypto simplified></Crypto>
@@ -61,7 +63,7 @@ const Home = () => {
           Latest News
         </Title>
         <Title level={4} className='show-more'>
-          <Link to='/news'>Show More</Link>
+          <Link to='/news'>View All</Link>
         </Title>
       </div>
       <News simplified></News>

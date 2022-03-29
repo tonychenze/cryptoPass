@@ -1,5 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import { Link } from 'react-router-dom';
+import { HomeOutlined, StockOutlined, RocketOutlined } from '@ant-design/icons';
 import '../../App.css';
 
 const Navigation = () => {
@@ -19,7 +20,7 @@ const Navigation = () => {
       className='navbar navbar-expand-lg navbar-light bg-light'
       id='user-navigation'
     >
-      <Link className='navbar-brand' to='/'>
+      <Link className='navbar-brand app-text-logo' to='/'>
         CryptoPass
       </Link>
       <button
@@ -39,21 +40,33 @@ const Navigation = () => {
         <ul className='navbar-nav mr-auto'>
           <li className='nav-item'>
             <Link className='nav-link' to='/'>
+              <span className='nav-icon'>
+                <HomeOutlined />
+              </span>
               Home
             </Link>
           </li>
           <li className='nav-item'>
             <Link className='nav-link' to='/cryptos'>
+              <span className='nav-icon'>
+                <StockOutlined />
+              </span>
               Cryptos
             </Link>
           </li>
           <li className='nav-item'>
             <Link className='nav-link' to='/exchanges'>
+              <span className='nav-icon'>
+                <StockOutlined />
+              </span>
               Exchanges
             </Link>
           </li>
           <li className='nav-item'>
             <Link className='nav-link' to='/news'>
+              <span className='nav-icon'>
+                <RocketOutlined />
+              </span>
               News
             </Link>
           </li>
