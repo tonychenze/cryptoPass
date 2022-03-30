@@ -58,7 +58,7 @@ const Home = () => {
         </Title>
       </div>
       <Crypto simplified></Crypto>
-      <div className='homepage-heading-contianer'>
+      {/* <div className='homepage-heading-contianer'>
         <Title level={3} className='homepage-title'>
           Latest News
         </Title>
@@ -66,7 +66,7 @@ const Home = () => {
           <Link to='/news'>View All</Link>
         </Title>
       </div>
-      <News simplified></News>
+      <News simplified></News> */}
     </div>
   );
 };

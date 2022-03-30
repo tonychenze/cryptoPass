@@ -55,14 +55,14 @@ const Navigation = () => {
               Cryptos
             </Link>
           </li>
-          <li className='nav-item'>
+          {/* <li className='nav-item'>
             <Link className='nav-link' to='/news'>
               <span className='nav-icon'>
                 <RocketOutlined />
               </span>
               News
             </Link>
-          </li>
+          </li> */}
         </ul>
       </div>
     </nav>

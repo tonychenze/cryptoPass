@@ -6,7 +6,7 @@ import Spinner from '../Spinner';
 
 import { useGetCryptosQuery } from '../../services/cryptoApi';
 const Crypto = ({ simplified }) => {
-  const count = simplified ? 10 : 100;
+  const count = simplified ? 12 : 100;
   const { data, isFetching } = useGetCryptosQuery(count);
   const [filterText, setFilterText] = useState('');
   const [cryptos, setCryptos] = useState(data?.data?.coins);

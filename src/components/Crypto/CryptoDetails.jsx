@@ -20,7 +20,7 @@ const CryptoDetails = () => {
   const { data: coinHistory } = useGetCryptoHistoryQuery({ coinId, period });
   const coinDetails = data?.data?.coin;
   const volumn = coinDetails ? coinDetails['24hVolume'] : '';
-  console.log(coinDetails);
+
   const stats = [
     {
       title: 'Price to USD',
