@@ -11,6 +11,7 @@ const Navigation = () => {
   const classTwo = collapsed
     ? 'navbar-toggler navbar-toggler-right collapsed'
     : 'navbar-toggler navbar-toggler-right';
+
   const toggleNavbar = useCallback(() => {
     setCollapsed((prev) => !prev);
   });
@@ -52,14 +53,6 @@ const Navigation = () => {
                 <StockOutlined />
               </span>
               Cryptos
-            </Link>
-          </li>
-          <li className='nav-item'>
-            <Link className='nav-link' to='/exchanges'>
-              <span className='nav-icon'>
-                <StockOutlined />
-              </span>
-              Exchanges
             </Link>
           </li>
           <li className='nav-item'>

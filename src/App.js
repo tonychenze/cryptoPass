@@ -4,7 +4,6 @@ import {
   Homepage,
   Crypto,
   CryptoDetails,
-  Exchanges,
   News,
 } from './components';
 import { Switch, Route } from 'react-router-dom';
@@ -20,7 +19,7 @@ function App() {
         <Route exact path='/cryptos'>
           <Crypto></Crypto>
         </Route>
-        <Route exact path='/cryptos:coinId'>
+        <Route exact path='/cryptos/:coinId'>
           <CryptoDetails></CryptoDetails>
         </Route>
         <Route exact path='/news'>
